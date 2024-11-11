@@ -1,0 +1,88 @@
+<html>
+    <head>
+      <!--това е надпис при търсене на приложението в интернет-->
+      <title>регистрация за приложението URLshorter</title>
+      <!--това се използва за кирилизиране на текста-->
+        <meta charset="UTF-8">
+        <!--това се използва за по-добър изглед на приложението-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--тук се използват стилове от определени тагове-->
+        <link rel="stylesheet" type="text/css" href="mystyles8.css" media="screen">
+        <!--това е малката иконка за лого-->
+        <link rel="icon" type="image/x-icon" href="URLshorter.png">
+         <!--това се използва за правене на приложението за телефони, таблети, лаптопи и компютри-->
+        <link rel="stylesheet" type="text/css" href="dragdevicereg.css" media="screen">
+    </head>
+    <body class="fon">
+        <br>
+        <br>
+        <!--това е надпис, който се движи от ляво на дясно-->
+        <marquee id="stylemarq" direction="right" class="marqueestyle">Регистрирай се</marquee>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--място, където трябва да се регистрираш-->
+        <div id="divregistration">
+          <!--това е надпис, който кара потребителя да се регистрира-->
+          <p class="normaltext" style="margin-bottom: 150px;background-color: rgb(255, 255, 255);font-weight: 500;padding: 9px;">Регистрирайте се, за да видите приложението.</p>
+        <!--на първото място се въвежда име на потребителя-->
+        <input type="text" id="registration1" placeholder="име" class="styleinput" title="моля попълнете празното поле за име" required>
+        <br>
+        <!--на второто място се въвежда паролата на потребителя -->
+        <input type="text" id="registration2" placeholder="парола" class="styleinput" title="моля попълнете празното поле за парола" required>
+         <br>
+        <!--когато са въведени парола и име, трябва да натиснеш бутона с надписа регистрирай се-->
+        <button id="feer" class="stylebutton" onclick="myreg()">регистрирай се</button> 
+        <br>
+        <br>
+        <p class="normaltext" style="background-color: rgb(255, 255, 255);font-weight: 500;padding: 9px;">Ако се регистрирате, ще видите интересни неща.</p>
+        <!--тука ще се появи надпис, ако двете полета са празни или едно от полетата не е попълнено-->
+        <p id="important text" style="font-size: 30px;background-color: white;padding: 10px;visibility: hidden;"></p>
+       <br>
+    </div>
+    </body>
+    <script>
+    
+
+          
+        
+        function myreg()
+        {
+
+          //прави проверка, дали е попълнено празното поле за потребителското име
+          const checklog1=document.getElementById('registration1');
+          //прави проверка, дали е попълнено празното поле за потребителската парола
+          const checklog2=document.getElementById('registration2');
+          
+          //променливата стойност log1 е за генериране на въведеното от потребителя име
+          const log1=checklog1.value;
+          //променливата стойност log2 е за генериране на въведената от потребителя парола
+          const log2=checklog2.value;
+          
+          //прави проверка, ако едно от двете празни полета не е попълнено
+          if(!checklog1.checkValidity() || !checklog2.checkValidity())
+          {
+            document.getElementById('important text').style.visibility="visible";
+            document.getElementById('important text').innerHTML="моля, попълнeте всичките полетa";
+          }
+          //прави проверка, ако двете  празни полета не са попълнени
+          else if(!checklog1.checkValidity() && !checklog2.checkValidity())
+          {
+            document.getElementById('important text').style.visibility="visible";
+            document.getElementById('important text').innerHTML="моля, попълнeте всичките полетa";
+          }
+          //ако и двете празни полета са попълнени, се връщаш към началната страница и продължаваш
+          else 
+           {
+            window.location.assign("homepage URLshorternew.html")
+           }
+        }
+        
+    </script>
+</html>

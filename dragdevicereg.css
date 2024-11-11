@@ -1,0 +1,111 @@
+@media(max-width: 909px)
+{
+   /*Когато размерите на приложението при определен екран е максимално до 909px ширина ще направи елементите marquee.marqueestyle и div#divregistration да се преместват различно по ширина, а по височина да не се премества.При елементите: marquee.marqueestyle и div#divregistration, width:100% означава, че при преместване на екрана по височина и по ширина, размерите на елементите по ширина няма да се променят по отношение*/
+    marquee.marqueestyle
+    {
+        margin:0 auto;
+        width:100%;
+    }
+    div#divregistration
+    {     
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+@media (min-width:0px) 
+{
+   /*Когато размерите на приложението при определен екран е от 0px ширина до накаква крайна граница ще се преместват различно по ширина и да не преместват по височина и да даде начална стойност при размерите на шрифта на елемента p.normaltext. При елемента: div#divregistration, width:100% означава, че при преместване на екрана по височина и по ширина, размерите на div#divregistration по ширина няма да се променят по отношение*/ 
+    div#divregistration
+    {     
+        width: 100%;
+        margin: 0 auto;
+    }
+   
+    p.normaltext{
+        font-size: 15px;
+        margin:0 auto;
+    }
+}
+@media (min-width:910px) 
+{
+    /*Когато размерите на приложението при определен екран е от 910px ширина до безкрай ще определи при елемента div#divregistration да има постоянни размери на ширина 900px и да се премества по различно по ширина и да не се премества по височина*/
+    div#divregistration
+    {     
+        width: 900px;
+        margin: 0 auto;
+    }
+   
+}
+@media (max-width:300px) 
+{
+   /*Когато размерите на приложението при определен екран е максимално до 300px ширина ще направи елементите input#registration1, input#registration2, p.normaltext да се преместват различно по ширина, а не да се преместват по височина. А елементите marquee.marqueestyle, button#feer, p.normaltext, input#registration1, input#registration2 са с размери на шрифта на текста 25px, 20px, 20px, 15px. При елементите: input#registration1, input#registration2, width:95% означава, че при преместване на екрана по височина и по ширина, размерите на input#registration1, input#registration2 по ширина малко по-малки ще са по началното им отношение*/
+    input#registration1
+    {
+        margin:0 auto;
+        width:95%;
+        font-size: 15px;
+    }
+    input#registration2
+    {
+        margin:0 auto;
+        width:95%;
+        font-size: 15px;
+    }
+    marquee.marqueestyle
+    {
+        font-size: 25px;
+    }
+    button#feer{
+        font-size:20px;
+    }
+    p.normaltext
+    {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+}
+@media (max-width:242px) 
+{
+    /*Когато размерите на приложението при определен екран е максимално до 242px ширина button#feer ще се премества различно по ширина, а не по височина и размерите на шрифта на текста да е 20px. При елемента: button#feer, width:95% означава, че при преместване на екрана по височина и по ширина, размерите на button#feer по ширина малко по-малки ще са по началното им отношение*/
+    button#feer
+    {
+        margin:0 auto;
+        width:95%;
+        font-size:20px;
+    } 
+   
+}
+@media (min-width:301px) 
+{
+    /*Когато размерите на приложението при определен екран е минимално от 301px. p.normaltext ще си промени до постоянния си размери на шрифта на текста 35px и ще се премества различно по ширина и да не се премества по височина. button#feer ще стане размери на шрифта на текста 25px. marquee.marqueestyle ще стане размери на щрифта на текста 30px. input#registration1 ще стане размери на щрифта на текста 20px. input#registration2 ще стане размери на щрифта на текста 20px.*/
+    p.normaltext
+    {
+        font-size: 35px;
+        margin:0 auto;
+    }
+    button#feer{
+        font-size:25px;
+    }
+    marquee.marqueestyle
+    {
+       font-size: 30px;
+    }
+    input#registration1
+    {
+       
+        font-size: 20px;
+    }
+    input#registration2
+    {
+       
+        font-size: 20px;
+    }
+}
+@media (max-width:140px) 
+{
+    /*Когато размерите на приложението при определен екран е максимално до 140px, p.normaltext ще промени размерите на шрифта на текста на 20px*/
+    p.normaltext
+    {
+        font-size: 20px;
+    }
+}

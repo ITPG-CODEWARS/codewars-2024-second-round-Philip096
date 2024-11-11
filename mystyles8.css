@@ -1,0 +1,164 @@
+/* Елементът body.fon е с цвят на фона #3e96df и всичките елементи, които се намират в тага body, ще са на максималното място, където могат да се намират. */
+body.fon
+{
+    margin: 0px;
+    background-color: #3e96df;
+}
+/* Елементът p.gh е с цвят на фона rgb(72, 194, 216), размерите на шрифта на текста е 25px и елемента е вмъкнат в приложението по височина и ширина по 20px */
+p.gh
+{
+    background-color:rgb(72, 194, 216);
+    font-size: 25px;
+    padding: 20px;
+} 
+/* Елементът p.ah е с цвят на фона rgb(255, 255, 255), размерите на шрифта на текста е 40px, шрифта на текста е bolder и елемента p.ah е вмъкнат по ширина и по височина по 9px в приложението. */
+p.ah
+{
+    font-size: 40px;
+    background-color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 9px;
+}
+/* Елементът p.bh е с цвят на фона rgb(255, 255, 255), размерите на шрифта на текста е 35px, щрифта на текста е с дебелина 500 и се вмъква в приложението по ширина и височина по 9px. */
+p.bh
+{
+    font-size: 35px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding: 9px;
+}
+/* В елемента button.ew се променя курсора от обикновен в показалец, шрифта на текста е с размери 25px и вмъкването на елемента button.ew по височина и ширина по 10px. */
+button.ew
+{
+   padding: 10px;
+   font-size: 25px;
+   cursor: pointer;
+}
+/* При преминаване на елемента button.ew се променя фона на текста от бял на зелен и цвета на шрифта на текста му се променя от черен на бял. */
+button.ew:hover
+{
+   background-color: green;
+   color:white;
+   
+}
+/* Елементът input.styleinput е с височина 40px; рамката му е с размери 1px по височина и по ширина, със стил solid и с цвят #d4d1d3;радиуса на рамката е 7px и се вмъква по ширина по 10px и остава празно място нагоре с размери 10px */
+input.styleinput
+{
+  border: 1px solid #d4d1d3;
+  border-radius: 7px;
+    
+  height: 40px;
+  padding: 0 10px;
+  margin-top: 10px;
+}
+/* В елемента button.stylebutton при преминаването му се променя курсора от обикновен в показалец и се вмъква по височина по 5px и по ширина по 10px, ще има над него празно място с размери 10px */
+button.stylebutton
+{
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+/* При преминаване на елемента button.stylebutton ще се промени оцвета фона му от бяло на зелено и ще се промени цвета на текста от обикновен на бял */
+button.stylebutton:hover
+{
+ background-color: green;
+ color:white;
+}
+/* Елементът marquee.marqueestyle е с цвят на фона #5b9fd6, размерите на рамката са 1px по височина и ширина, стила му е solid и цвета му е черен; радиуса на рамката е 30px; цвета на фона е #5b9fd6; елемента се вмъква в приложението по височина по 5px и по ширина по 10px */
+marquee.marqueestyle
+{
+  border: 1px solid black;
+  border-radius: 30px;  
+  background-color: #5b9fd6;
+  padding: 5px 10px;
+     
+}
+/* Елементът div#divregistration е с цвят на фона rgb(88, 88, 199), разположението на текста е центрирано и се вмъкне по височина по 35px */
+div#divregistration
+{
+   
+  padding-top: 35px;
+  text-align: center;
+  background-color: rgb(88, 88, 199);
+}
+/* Елементът button#add е с радиус на рамката с 10px по ширина и по височина и е с празно място на ляво с 10px по ширина */ 
+button#add
+{
+  border-radius: 10px;
+  margin-left: 10px;
+}
+/* Елементът h1.heading е с цвят на фона aqua, шрифта на текста на елемента е с шрифтовете Arial, Helvetica, текста е централно позициониран, дебелината на шрифта е 800 и елемента h1.heading е вмъкнат по 5px височина и по 10px ширина */
+h1.heading
+{
+    
+    background-color: aqua;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+/* Елементът div.focusfon е с цвят на фона rgb(72, 194, 216)*/ 
+div.focusfon
+{
+    background-color:rgb(72, 194, 216);
+    
+}
+/* Елементът input#writelongurl е височина 40px, ще се вмъкне с 10px ширина и над него има празно място с размери 10px, рамката на елемента input#writelongurl е с размери 1px ширина и височина; стила на рамката е solid и цвета на фона на рамката е #d4d1d3, радиуса на рамката на елемента input#writelongurl е 7px ширина и височина */
+input#writelongurl
+{
+    border: 1px solid #d4d1d3;
+    border-radius: 7px;
+    
+    height: 40px;
+    padding: 0 10px;
+    margin-top: 10px;
+}
+/* Елементът div#divurlshorter е с вмъкване нагоре с 35px , позиционирането на текста на елемента е централно, цвета на фона на елемента div#divurlshorter е rgb(88, 88, 199) и радиуса на рамката е 50px ширина и височина */
+div#divurlshorter
+{
+  border-radius: 50px;
+  padding-top: 35px;
+  text-align: center;
+  background-color: rgb(88, 88, 199);
+}
+/*В елемента p#shortURL е с вмъкване 10px по ширина и по височина, цвета на фона е бял и първоначално е скрит */
+p#shortURL
+{
+    background-color: white;
+    padding: 10px;
+    visibility: hidden;
+}
+/* В елемента div.menu цвета на фона е #e9e9e9, елементите в div.menu не преминават през него и което е преминало през елемента div.menu ще се скрие */
+div.menu 
+{
+    
+    overflow: hidden;
+    background-color: #e9e9e9;
+    display: block;
+}
+  /* Елементът "div.menu a" е с черен цвят, текста на елемента е центриран, шрифта му е с размери 27px, елемента "div.menu a" е вмъкнат по височина по 15px и по ширина по 16px, над него има празно място с размери 10px височина и елементите, които се намират в div.menu се преместват с 10px надясно */
+  div.menu a 
+  {
+     float: left;
+     margin-top: 10px;
+     margin-left: 10px;
+     color: black;
+     text-align: center;
+     padding: 15px 16px;
+     text-decoration: none;
+     font-size: 27px;
+   
+  }
+  /* при преминаване на елемента div.menu a цвета на фона е rgb(54, 112, 199), а цвета на текста е liceblue */
+  div.menu a:hover 
+  {
+    background-color: rgb(54, 112, 199);
+    color:aliceblue;
+  }
+  /* Елементът div.menu a.izbran,  когато сме на определена страница, ще се оцвети с цвета на фона #292288 и цвета на текста на елемента div.menu a.izbran е #f9f9f9 */
+  div.menu a.izbran 
+  {
+    background-color: #292288;
+    color:#f9f9f9;
+    
+  }

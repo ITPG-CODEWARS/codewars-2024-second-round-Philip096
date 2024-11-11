@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <!--това е надпис при търсенето на приложението в интернет-->
+        <title>URLshorter</title>
+<!--това се използва за кирилизиране на текста-->
+<meta charset="UTF-8">
+<!--това се използва за по-добър изглед на приложението-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--тук се използват стилове от определени тагове-->
+<link rel="stylesheet" type="text/css" href="mystyles8.css" media="screen">
+<!--това е малката иконка за лого-->
+<link rel="icon" type="image/x-icon" href="URLshorter.png">
+ <!--това се използва за правене на приложението за телефони, таблети, лаптопи и компютри-->
+<link rel="stylesheet" type="text/css" href="dragdevicehome.css" media="screen">
+    </head>
+    <body class="fon">
+        <!--това е заглавието на началната страница-->
+        <h1 class="heading">URLshorter</h1>
+        <br>
+        <br>
+        <br>
+        <!--това е навигационно меню-->
+        <div class="menu">
+            <img src="URLshorter.png" style="float: left;">
+            <a class="izbran" href="homepage URLshorter.html">начална страница</a>
+            <a href="instrumentURLshorter.html">инструмент за съкращаване на дълги URL адреси</a>
+        </div>
+        <br>
+        <br>
+        <!--това е подзаглавие на началната страница-->
+         <p class="ah">какво е URLshorter и за какво се използва</p>
+         <!--това е описание и обяснение за приложението URLshorter-->
+         <div class="focusfon" style="line-height: 50px;">
+          <p class="text">Приложението URLshorter е място за съкращаване на URL адреси.</p>
+          <p class="text">В URLshorter се съкращаване на дълги URL адреси</p>
+          <!--това е пример за дълъг URL адрес-->
+          <p class="text">пример: https://domain.bg/homepage/URL_address</p>
+          <p class="text">URLshorter го прави на съкратени URL адреси</p>
+          <!--това е пример за съкратен URL адрес-->
+          <p class="text">пример: https://URLshorter/URL12</p>   
+         </div>
+         <!--това е допълнителна информация-->
+         <p class="bh">Ако нещо не сте разбрали, натиснете бутона отдолу за повече информация.</p>
+         <br>
+         <br>
+         <!--това е бутон за допълнителна информация за съкращаване на URL адреси-->
+         <button id="add" class="ew" onclick="urladress()">натисни за повече информация</button>
+         <br>
+         <br>
+    </body>
+    <script>
+        //когато влезете в приложението, ще бъдете изпратен в страницата за регистриране.
+        window.location.assign("registration.html")
+       
+       //когато се натисне бутона, получавате повече информация за съкращаване на URL адреси
+       function urladress()
+       {
+           document.location="https://en.wikipedia.org/wiki/URL_shortening";
+       }
+    </script>
+</html>

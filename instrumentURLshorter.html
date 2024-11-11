@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <!--това е надпис при търсене на приложението в интернет-->
+      <title>регистрация за приложението URLshorter</title>
+      <!--това се използва за кирилизиране на текста-->
+        <meta charset="UTF-8">
+        <!--това се използва за по-добър изглед на приложението-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--тук се използват стилове от определени тагове-->
+        <link rel="stylesheet" type="text/css" href="mystyles8.css" media="screen">
+        <!--това е малката иконка за лого-->
+        <link rel="icon" type="image/x-icon" href="URLshorter.png">
+         <!--това се използва за правене на приложението за телефони, таблети, лаптопи и компютри-->
+        <link rel="stylesheet" type="text/css" href="dragdeviceurl.css" media="screen">
+    </head>
+    <body class="fon">
+        <!--това е заглавието на страницата на инструмент за съкращаване на дълги URL адреси-->
+        <h1 class="heading">инструмент за съкращаване на дълги URL адреси</h1>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--това е навигационно меню-->
+        <div class="menu">
+            <img src="URLshorter.png" style="float: left;" alt="Възникна Грешка">
+            <a href="homepage URLshorternew.html">начална страница</a>
+            <a class="izbran" href="instrumentURLshorter.html">инструмент за съкращаване на дълги URL адреси</a>
+        </div>
+         <br>
+         <br>
+         <!--място за правене от дълъг на къс URL адрес-->
+        <div id="divurlshorter">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--на това място се попълва дългия URL адрес-->
+        <input type="text" id="writelongurl" placeholder="напишете дългия URL адрес" title="моля, попълнете дългия URL адрес" required>
+        <br>
+        <!--когато си въвел дългия URL адрес, трябва да натиснеш бутона с надписа съкрати дългия URL адрес и после ще се напише съкратения му URL адрес-->
+        <button id="feer2" class="stylebutton" onclick="myurl()">съкрати дългия URL адрес</button> 
+        <br>
+        <br>
+         <!--това е мястото, където се записва съкратения URL адрес-->
+        <p id="shortURL"></p>
+       <br>
+    </div>
+    </body>
+    <script>
+    
+
+          
+        
+        function myurl()
+        {
+
+          //прави проверка, дали е попълнено празното поле за дълъг URL адрес
+          const checklog1=document.getElementById('writelongurl');
+          //променливата стойност log1 е за генериране на въведеното от потребителя дълъг URL адрес
+          const log1=checklog1.value;
+           //елементите character, muchsymbols, value, symbol са отделни части, който правят късия URL адрес
+           let character="abcdefghijklmnopqrstuvwxyz"
+           let muchsymbols="36aeft63rtgry64t63hy7u65tjukik63ikiye432ed2!@#$56678*&"
+           let value="abcdefghijklmnopqrstuvwxy345460409uger890u4903fr90123445678899@!#$%&*"
+           let symbol="!@#$%&*?"
+
+          //прави проверка, ако дългия URL адрес не е попълнен
+          if(!checklog1.checkValidity())
+          {
+            
+            document.getElementById('shortURL').style.visibility="visible";
+            document.getElementById('shortURL').innerHTML="моля, попълнeте полето за дългия URL адрес";
+          }
+          //Ако дългия URL адрес е попълнен, ще се появи съкратения му вариант
+          else 
+           {      
+              
+             document.getElementById('shortURL').style.visibility="visible";
+             document.getElementById('shortURL').innerHTML="съкратения URL адрес: "+"https://URLshorter/"+muchsymbols.charAt(Math.random() * 54)+(Math.floor(Math.random() * 9)+10)+symbol.charAt(Math.random()*8)+character.charAt(Math.random() * 30)+Math.floor(Math.random() * 9)+value.charAt(Math.random() *69);
+           }
+          
+           
+        }
+        
+    </script>
+</html>
